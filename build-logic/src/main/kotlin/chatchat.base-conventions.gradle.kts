@@ -25,4 +25,8 @@ tasks {
         options.encoding = "UTF-8"
         options.compilerArgs.add("-parameters")
     }
+
+    withType<Javadoc> {
+        isFailOnError = false
+    }
 }
